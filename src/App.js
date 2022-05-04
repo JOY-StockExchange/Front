@@ -1,6 +1,7 @@
 import './App.css';
 import SideBar from './components/SideBar';
 import Home from './pages/Home';
+import MyPage from './pages/MyPage';
 import Footer from './components/Footer';
 
 

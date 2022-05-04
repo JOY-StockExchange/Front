@@ -5,6 +5,13 @@
     background-color: #ffffff;
 }
 
+.container__title{
+    color: var(--bold-text-color);
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+}
+
 .container__stockranking{
     height: 100%;
 }
@@ -13,13 +20,24 @@
     margin-bottom: 10px;
 }
 
-.container__stocknews{
-    margin-top: 10px;
+.container__myinfo{
+    margin-bottom: 15px;
+    margin-right: 10px;
 }
 
-.container__title{
-    color: var(--bold-text-color);
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: -0.02 em;
+.container__exchangerate{
+    margin-right: 10px;
+}
+
+.container__myaccount{
+    margin: 0px 10px;
+}
+
+.container__mystock{
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.container__heartstock{
+    margin-left: 10px;
 }

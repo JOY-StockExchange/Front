@@ -15,7 +15,7 @@
 }
 
 nav{
-  width: 240px;
+  max-width: 240px;
   flex: 1;
   background-color: #ffffff;
   display: flex;
@@ -29,7 +29,7 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size:x-large;
+  font-size: x-large;
   font-weight: bolder;
   color: var(--bold-text-color);
 }

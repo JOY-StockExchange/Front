@@ -1,0 +1,38 @@
+.home{
+    display: flex;
+}
+
+.home__section1{
+    flex: 1;
+    margin: 50px 0px;
+}
+
+.home__section2{
+    flex: 1;
+    margin: 50px 0px;
+}
+
+.mypage__wrap{
+    display: flex;
+}
+
+.mypage__header{
+    padding: 20px 26px;
+    height: 80px;
+    color: var(--bold-text-color);
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: -0.02em;
+}
+
+.mypage__section1{
+    width: 25%;
+}
+
+.mypage__section2{
+    flex: 1;
+}
+
+.mypage__section3{
+    flex: 1;
+}

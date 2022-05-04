@@ -1,7 +1,7 @@
 import RecentStock from '../components/container/RecentStock';
 import StockNews from '../components/container/StockNews';
 import StockRanking from '../components/container/StockRanking';
-import './Home.css'
+import './page.css'
 const Home = () => {
     return(
         <div className='home'>
