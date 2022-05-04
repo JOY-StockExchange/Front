@@ -41,3 +41,21 @@
 .container__heartstock{
     margin-left: 10px;
 }
+
+.container__stockchart{
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.container__order{
+    margin-right: 10px;
+}
+
+.container__orderbook{
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.container__stockinfo{
+    margin-left: 10px;
+}

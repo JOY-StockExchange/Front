@@ -16,7 +16,7 @@
     display: flex;
 }
 
-.mypage__header{
+header{
     padding: 20px 26px;
     height: 80px;
     color: var(--bold-text-color);
@@ -34,5 +34,17 @@
 }
 
 .mypage__section3{
+    flex: 1;
+}
+
+.stockpage__wrap{
+    display: flex;
+}
+
+.stockpage__section1{
+    width: 60%;
+}
+
+.stockpage__section2{
     flex: 1;
 }
