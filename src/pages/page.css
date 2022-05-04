@@ -48,3 +48,15 @@ header{
 .stockpage__section2{
     flex: 1;
 }
+
+.signin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

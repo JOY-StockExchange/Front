@@ -59,3 +59,31 @@
 .container__stockinfo{
     margin-left: 10px;
 }
+
+.container__signincontainer{
+    width: 450px;
+    height: 600px;
+    margin: 100px 300px;
+    padding: 90px 70px;
+}
+
+.signincontainer__title{
+    color: var(--bold-text-color);
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+}
+
+.container__signupcontainer{
+    width: 450px;
+    height: 600px;
+    margin: 100px 300px;
+    padding: 90px 70px;
+}
+
+.signupcontainer__title{
+    color: var(--bold-text-color);
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+}

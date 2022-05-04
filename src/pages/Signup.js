@@ -1,6 +1,9 @@
+import SignupContainer from '../components/container/SignupContainer';
 const Signup = () => {
     return(
-        <div>Signup</div>
+        <div className='signup'>
+            <SignupContainer />
+        </div>
     );
 }
 export default Signup;
