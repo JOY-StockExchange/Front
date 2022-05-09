@@ -1,7 +1,7 @@
-import StockChart from '../components/container/StockChart';
-import Order from '../components/container/Order';
-import OrderBook from '../components/container/OrderBook';
-import StockInfo from '../components/container/StockInfo';
+import StockChart from '../components/container/StockPage/StockChart';
+import Order from '../components/container/StockPage/Order';
+import OrderBook from '../components/container/StockPage/OrderBook';
+import StockInfo from '../components/container/StockPage/StockInfo';
 import './page.css';
 
 const StockPage = () => {

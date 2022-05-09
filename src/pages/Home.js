@@ -1,6 +1,6 @@
-import RecentStock from '../components/container/RecentStock';
-import StockNews from '../components/container/StockNews';
-import StockRanking from '../components/container/StockRanking';
+import RecentStock from '../components/container/Home/RecentStock';
+import StockNews from '../components/container/Home/StockNews';
+import StockRanking from '../components/container/Home/StockRanking';
 import './page.css'
 const Home = () => {
     return(

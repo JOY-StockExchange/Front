@@ -1,8 +1,8 @@
-import MyInfo from '../components/container/MyInfo';
-import ExchangeRate from '../components/container/ExchangeRate';
-import MyAccount from '../components/container/MyAccount';
-import MyStock from '../components/container/MyStock';
-import HeartStock from '../components/container/HeartStock';
+import MyInfo from '../components/container/MyPage/MyInfo';
+import ExchangeRate from '../components/container/MyPage/ExchangeRate';
+import MyAccount from '../components/container/MyPage/MyAccount';
+import MyStock from '../components/container/MyPage/MyStock';
+import HeartStock from '../components/container/MyPage/HeartStock';
 import './page.css';
 
 const MyPage = () => {
