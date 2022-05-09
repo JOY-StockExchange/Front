@@ -3,6 +3,8 @@
     padding: 20px 20px;
     border-radius: 20px;
     background-color: #ffffff;
+    display: flex;
+    overflow: auto;
 }
 
 .container__title{
@@ -10,6 +12,7 @@
     font-weight: bold;
     font-size: 20px;
     letter-spacing: -0.02em;
+    flex : none;
 }
 
 .container__stockranking{
