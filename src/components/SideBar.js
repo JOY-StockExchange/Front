@@ -29,13 +29,6 @@ const SideBar = () => {
                         <div className="nav__statebar nav__statebar--active"></div>
                     </li>
                 </NavLink>
-                <NavLink to = "signup" className={({isActive}) => (isActive ? "active": "inactive")}>
-                    <li className="nav__li">
-                        <i className="fa-solid fa-user "></i>
-                        <span>회원가입</span>
-                        <div className="nav__statebar nav__statebar--active"></div>
-                    </li>
-                </NavLink>
             </ul>
         </nav>
     );

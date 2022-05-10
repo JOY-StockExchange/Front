@@ -1,11 +1,12 @@
 import '../container.css'
 
-const SignupContainer = () => {
+const Signup = () => {
     return(
-        <div className='container container__signupcontainer'>
-            <div className='signupcontainer__title'>회원가입</div>
+        <div className='container container__signup'>
+            <div className='signup__title'>회원가입</div>
+            <div className='signup__form'></div>
         </div>
     )
 }
 
-export default SignupContainer;
+export default Signup;

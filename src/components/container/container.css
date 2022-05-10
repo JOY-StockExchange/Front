@@ -63,30 +63,130 @@
     margin-left: 10px;
 }
 
-.container__signincontainer{
+.container__signin{
     width: 450px;
     height: 600px;
     margin: 100px 300px;
-    padding: 90px 70px;
+    padding: 80px 85px;
+    display: flex;
+    flex-direction: column;
 }
 
-.signincontainer__title{
+.signin__title{
     color: var(--bold-text-color);
     font-weight: bold;
     font-size: 28px;
     letter-spacing: -0.02em;
 }
 
-.container__signupcontainer{
+.signin__form{
+    margin-top: 50px;
+}
+
+.form__element{
+    margin: 20px 0px;
+    color: var(--bold-text-color);
+    font-size: 13px;
+    letter-spacing: -0.02em;
+}
+
+input[type='email'], input[type='password'] {
+    margin-top: 7px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid var(--soft-text-color);
+    border-radius: 10px;
+    padding: 15px;
+    outline: none;
+}
+
+input[type='email']:focus, input[type='password']:focus{
+    border: 3px solid var(--soft-text-color)
+}
+
+input[type='email']::placeholder, input[type='password']::placeholder{
+    color: var(--sub-text-color);
+    font-size: 11px;
+    letter-spacing: -0.02em;
+}
+
+.form__checkbox{
+    display: flex;
+    align-items: center;
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    color: #ffffff;
+    background-color: var(--activate-color);
+    border: 0;
+    border-radius: 10px;
+    font-size: 13px;
+    letter-spacing: -0.02em;
+}
+
+.form__element a{
+    color: var(--activate-color);
+    font-weight: 600;
+}
+
+.container__signup{
     width: 450px;
     height: 600px;
     margin: 100px 300px;
     padding: 90px 70px;
 }
 
-.signupcontainer__title{
+.signup__title{
     color: var(--bold-text-color);
     font-weight: bold;
     font-size: 28px;
     letter-spacing: -0.02em;
+}
+
+/* custom checkbox */
+input[id='login-maintain']{
+    height: 0;
+    width: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input[id='login-maintain'] + label {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+    border: 2px solid var(--soft-text-color);
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+
+input[id='login-maintain']:checked + label{
+    border: 0px;
+    background-color: var(--activate-color);
+}
+
+label:after {
+    content: "";
+    position: relative;
+    display: none;
+}
+
+input[id='login-maintain']:checked + label:after{
+    display: block;
+}
+
+.form__checkbox label:after{
+    left: 3.4px;
+    top: 1px;
+    width: 2.5px;
+    height: 6px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
