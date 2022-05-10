@@ -8,7 +8,7 @@ const StockPage = () => {
     return(
         <div className='stockpage'>
         <header className='stockpage__header'>삼성전자</header>
-        <wrap className='stockpage__wrap'>
+        <div className='stockpage__wrap'>
             <section className='stockpage__section1'>
                 <StockChart />
                 <Order />
@@ -17,7 +17,7 @@ const StockPage = () => {
                 <OrderBook />
                 <StockInfo />
             </section>
-        </wrap>
+        </div>
     </div>
     );
 }

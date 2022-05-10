@@ -9,7 +9,7 @@ const MyPage = () => {
     return(
         <div className='mypage'>
             <header className='mypage__header'>마이페이지</header>
-            <wrap className='mypage__wrap'>
+            <div className='mypage__wrap'>
                 <section className='mypage__section1'>
                     <MyInfo />
                     <ExchangeRate />
@@ -21,7 +21,7 @@ const MyPage = () => {
                     <MyStock />
                     <HeartStock />
                 </section>
-            </wrap>
+            </div>
         </div>
     );
 }

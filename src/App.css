@@ -53,12 +53,12 @@ ul{
   align-items: center;
 }
 
-.nav__li .active{
+.active{
   font-weight: bold;
   color: var(--activate-color);
 }
 
-.nav__li .inactive{
+.inactive{
   color: var(--sub-text-color);
 }
 
@@ -68,11 +68,7 @@ ul{
   border-radius: 25px;
 }
 
-.nav__statebar--inactive{
-  background-color: var(--sub-text-color);
-}
-
-.nav__statebar--active{
+.active .nav__statebar--active{
   background-color: var(--activate-color);
 }
 
@@ -88,4 +84,8 @@ footer{
   width: 250px;
   display: flex;
   justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
 }
