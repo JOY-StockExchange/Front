@@ -1,19 +1,21 @@
 .home{
+    overflow: auto;
     display: flex;
+    justify-content: space-around;
 }
 
 .home__section1{
-    flex: 1;
     margin: 50px 0px;
 }
 
 .home__section2{
-    flex: 1;
     margin: 50px 0px;
 }
 
 .mypage__wrap{
+    margin: 20px 0px;
     display: flex;
+    justify-content: space-around;
 }
 
 header{
@@ -22,31 +24,12 @@ header{
     color: var(--bold-text-color);
     font-weight: bold;
     font-size: 30px;
-    letter-spacing: -0.02em;
-}
-
-.mypage__section1{
-    width: 25%;
-}
-
-.mypage__section2{
-    flex: 1;
-}
-
-.mypage__section3{
-    flex: 1;
 }
 
 .stockpage__wrap{
+    margin: 20px 0px;
     display: flex;
-}
-
-.stockpage__section1{
-    width: 60%;
-}
-
-.stockpage__section2{
-    flex: 1;
+    justify-content: space-around;
 }
 
 .signin{

@@ -24,7 +24,7 @@ const SideBar = () => {
                 </NavLink>
                 <NavLink to = "signin" className={({isActive}) => (isActive ? "active": "inactive")}>
                     <li className="nav__li">
-                        <i className="fa-solid fa-user "></i>
+                        <i className="fa-solid fa-lock"></i>
                         <span>로그인</span>
                         <div className="nav__statebar nav__statebar--active"></div>
                     </li>
