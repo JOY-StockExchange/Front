@@ -26,6 +26,10 @@ header{
     font-size: 30px;
 }
 
+.stockpage__header i{
+    font-size: 20px;
+}
+
 .stockpage__wrap{
     margin: 20px 0px;
     display: flex;
@@ -39,6 +43,12 @@ header{
 }
 
 .signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myinfoedit{
     display: flex;
     align-items: center;
     justify-content: center;

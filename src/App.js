@@ -6,6 +6,7 @@ import MyPage from './pages/MyPage';
 import StockPage from './pages/StockPage';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
+import MyInfoEdit from './pages/MyInfoEdit';
 import Footer from './components/Footer';
 import NotFound from './pages/NotFound';
 
@@ -22,6 +23,7 @@ function App() {
           <Route path = "stockpage/:stockId" element={<StockPage />} />
           <Route path = "signin" element={<Signin />} />
           <Route path = "signup" element={<Signup />} />
+          <Route path = "myinfoedit" element={<MyInfoEdit />} />
           <Route path = "*" element={<NotFound />} />
         </Routes>
         <Footer />

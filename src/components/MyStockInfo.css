@@ -1,0 +1,48 @@
+.section__mystockinfo .section__mystocktotal {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mystockinfo__update {
+    color: var(--sub-text-color);
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.mystockinfo__totalprice {
+    color: var(--bold-text-color);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mystockinfo__totalper {
+    color: var(--bold-text-color);
+    font-size: 11px;
+    margin-right: 10px;
+}
+
+.mystockinfo__totalper--num {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mystockinfo__totalper--positive {
+    color: var(--positive-color);
+}
+
+.mystockinfo__totalper--negative {
+    color: var(--negative-color);
+}
+
+.section__mystockinfo .section__buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button__mystockinfo {
+    width: 150px;
+    border-radius: 70px;
+}

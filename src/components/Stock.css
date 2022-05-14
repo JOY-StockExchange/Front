@@ -8,23 +8,29 @@
 }
 
 .element__stock{
-    margin: 0px 20px;
-    font-size: 13px;
+    margin: 0px 15px;
+    font-size: 14px;
     font-weight: bold;
 }
 
 .stock__name{
     color: var(--bold-text-color);
-    letter-spacing: 0.02em;
 }
 
 .stock__price{
     color: var(--bold-text-color);
-    letter-spacing: 0.02em;
 }
 
 .stock__per{
+    font-size: 13px;
+}
+
+.stock__per--positive{
     color: var(--positive-color);
+}
+
+.stock__per--negative{
+    color: var(--negative-color);
 }
 
 .img__stock{

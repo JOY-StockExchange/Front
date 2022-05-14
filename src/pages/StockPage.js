@@ -7,7 +7,11 @@ import './page.css';
 const StockPage = () => {
     return(
         <div className='stockpage'>
-        <header className='stockpage__header'>삼성전자</header>
+        <header className='stockpage__header'>
+            <span>삼성전자</span>
+            <i className="fa-solid fa-heart"></i>
+            <i className="fa-regular fa-heart"></i>
+        </header>
         <div className='stockpage__wrap'>
             <section className='stockpage__section1'>
                 <StockChart />

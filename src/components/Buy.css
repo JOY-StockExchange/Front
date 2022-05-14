@@ -1,0 +1,147 @@
+.section__buy {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section__buy--button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 20px 10px 0px;
+}
+
+.section__setorder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.section__checkorder{
+    display: flex;
+}
+
+.button__buy {
+    width: 150px;
+    border-radius: 70px;
+}
+
+.section__buynum, .section__buyprice {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__buynum .key, .section__buy .key {
+    color: var(--sub-text-color);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.section__buynum .value, .section__buy .value {
+    color: var(--bold-text-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.section__setprice{
+    display: flex;
+    align-items: center;
+}
+
+.section__setorder select {
+    width: 90px;
+    height: 36px;
+    padding: 10px;
+    margin-right: 10px;
+    color: var(--sub-text-color);
+    border: none;
+    border-radius: 7px;
+    background-color: var(--main-color);
+    font-size: 13px;
+}
+
+.section__setorder select:focus {
+    outline: 3px solid var(--soft-text-color);
+}
+
+.orderprice {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    border-radius: 14px;
+    border: 1px solid var(--soft-text-color);
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--bold-text-color);
+    padding-right: 30px;
+}
+
+.orderprice input{
+    width: 80px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--bold-text-color);
+}
+
+.orderprice:focus-within{
+    outline: 3px solid var(--soft-text-color);
+}
+
+.section__setorder .inputnum{
+    border-radius: 14px;
+    border: 1px solid var(--soft-text-color);
+    width: 270px;
+    height: 45px;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--bold-text-color);
+}
+
+.section__setorder .orderprice input:focus {
+    outline: none;
+}
+
+.section__setorder .inputnum:focus {
+    outline: 3px solid var(--soft-text-color);
+}
+
+.section__setorder .inputnum::placeholder {
+    font-size: 13px;
+    color: var(--sub-text-color);
+}
+
+.ablenum {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 270px;
+    height: 50px;
+    border-radius: 14px;
+    border: 1px solid var(--soft-text-color);
+    margin-bottom: 20px;
+}
+
+.ablenum .key {
+    font-size: 15px;
+    color: var(--sub-text-color);
+    margin: 0;
+}
+
+.ablenum .value {
+    font-size: 15px;
+    color: var(--bold-text-color);
+}
+
+
+
+
+

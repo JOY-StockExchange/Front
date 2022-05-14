@@ -1,0 +1,70 @@
+.myaccountinfo__section {
+    margin: 15px 0px;
+}
+
+.myaccountinfo__accountid {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: var(--bold-text-color);
+    text-decoration: underline;
+}
+
+.myaccountinfo__balance {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--bold-text-color);
+}
+
+.myaccountinfo__balance-withdraw {
+    font-size: 12px;
+    color: var(--sub-text-color);
+}
+
+.myaccountinfo__section__buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.myaccountinfo__button {
+    width: 130px;
+    margin: 0px 10px;
+    height: 35px;
+    border-radius: 70px;
+    font-size: 13px;
+}
+
+.myaccountinfo__li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+
+.myaccountinfo__price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.myaccountinfo__historyprice--positive {
+    font-weight: bold;
+    color: var(--positive-color);
+}
+
+.myaccountinfo__historyprice--negative {
+    font-weight: bold;
+    color: var(--negative-color);
+}
+
+
+.myaccountinfo__type, .myaccountinfo__time, .myaccountinfo__totalprice{
+    color: grey;
+}
+
+.myaccountinfo__date, .myaccountinfo__detail {
+    color: var(--bold-text-color);
+    font-weight: bold;
+}

@@ -1,0 +1,23 @@
+.stockinfo__li {
+    display: flex;
+    border-bottom: 1px solid var(--soft-text-color);
+}
+
+.stockinfo__el {
+    width: 170px;
+    margin: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stockinfo__key {
+    margin-right: 20px;
+    font-size: 14px;
+    color: var(--sub-text-color);
+}
+
+.stockinfo__value {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--bold-text-color);
+}
