@@ -95,6 +95,7 @@
 .container__orderbook{
     margin-left: 10px;
     margin-bottom: 15px;
+    flex-direction: column;
 }
 
 .container__stockinfo{

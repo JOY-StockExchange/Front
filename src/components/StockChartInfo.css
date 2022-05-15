@@ -1,0 +1,45 @@
+.stockchartinfo {
+    margin: 10px;
+}
+
+.stockchartinfo__select {
+    width: 80px;
+    height: 36px;
+    border: none;
+    font-size: 14px;
+    border-radius: 7px;
+    padding: 10px;
+    color: var(--sub-text-color);
+    background-color: var(--main-color);
+    margin-top: 20px;
+}
+
+.stockchartinfo__select:focus {
+    outline: 3px solid var(--soft-text-color);
+}
+
+.stockchartinfo__price {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--bold-text-color);
+    margin-right: 10px;
+}
+
+.stockchartinfo__per {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stockchartinfo__per--positive {
+    color: var(--positive-color);
+}
+
+.stockchartinfo__per--negative {
+    color: var(--negative-color);
+}
+
+.stockchartinfo__update {
+    font-size: 12px;
+    color: var(--sub-text-color);
+    margin-bottom: 4px;
+}
