@@ -92,6 +92,10 @@
     overflow: auto;
 }
 
+.container__myrecord{
+    margin-top: 15px;
+}
+
 .container__orderbook{
     margin-left: 10px;
     margin-bottom: 15px;
