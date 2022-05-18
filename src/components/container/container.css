@@ -4,6 +4,7 @@
     border-radius: 20px;
     background-color: #ffffff;
     display: flex;
+    flex-direction: column;
     overflow: auto;
 }
 
@@ -16,7 +17,6 @@
 
 .container__stockranking{
     height: 100%;
-    flex-direction: column;
 }
 
 .container__ul{
@@ -25,13 +25,11 @@
 
 .container__recentstock{
     margin-bottom: 10px;
-    flex-direction: column;
 }
 
 .container__myinfo{
     margin-bottom: 15px;
     margin-right: 10px;
-    flex-direction: column;
 }
 
 .myinfo__title, .myaccount__title{
@@ -63,17 +61,14 @@
 
 .container__myaccount{
     margin: 0px 10px;
-    flex-direction: column;
 }
 
 .container__mystock{
-    flex-direction: column;
     margin-bottom: 15px;
     margin-left: 10px;
 }
 
 .container__heartstock{
-    flex-direction: column;
     margin-left: 10px;
 }
 
@@ -83,28 +78,23 @@
 }
 
 .container__order{
-    flex-direction: column;
     margin: 0px 10px 0px 20px;
     padding: 0px 20px 20px 20px;
     border-radius: 20px;
     background-color: #ffffff;
-    display: flex;
-    overflow: auto;
 }
 
 .container__myrecord{
-    margin-top: 15px;
+    margin: 15px 10px 0px 20px;
 }
 
 .container__orderbook{
     margin-left: 10px;
     margin-bottom: 15px;
-    flex-direction: column;
 }
 
 .container__stockinfo{
     margin-left: 10px;
-    flex-direction: column;
 }
 
 .container__signin{
@@ -113,7 +103,6 @@
     margin: 100px 0px;
     padding: 80px 85px;
     display: flex;
-    flex-direction: column;
 }
 
 .signin__title{
@@ -281,7 +270,7 @@ input[id='agree-check']:checked + label:after{
 }
 
 .order__tab {
-    width: 230px;
+    width: 180px;
     display: flex;
     justify-content: center;
     padding-top: 10px;

@@ -1,0 +1,70 @@
+.myrecordlist {
+    display: flex;
+}
+
+.myrecordlist__info {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+    justify-content: center;
+}
+
+.myrecordlist__ele {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.myrecordlist__ele .key {
+    font-size: 15px;
+    color: var(--sub-text-color);
+    width: 80px;
+}
+
+.myrecordlist__ele .value {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--bold-text-color);
+}
+
+.myrecordlist__ul {
+    width: 320px;
+    margin: 10px 10px;
+    box-shadow: 0px 18px 40px rgba(112, 144, 176, 0.12);
+    border-radius: 15px;
+    padding: 0px 20px;
+}
+
+.myrecordlist__li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin: 5px 5px;
+}
+
+.myrecordlist__li .date, .myrecordlist__li .detail {
+    color: var(--bold-text-color);
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.myrecordlist__li .time, .myrecordlist__li .type, .myrecordlist__li .totalprice {
+    color: grey;
+}
+
+.myrecordlist__li .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.myrecordlist__li .price--positive {
+    color: var(--positive-color);
+    font-weight: bold;
+}
+
+.myrecordlist__li .price--negative {
+    color: var(--negative-color);
+    font-weight: bold;
+}

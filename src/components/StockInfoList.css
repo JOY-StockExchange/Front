@@ -4,20 +4,20 @@
 }
 
 .stockinfo__el {
-    width: 170px;
-    margin: 15px 10px;
+    width: 140px;
+    margin: 15px 8px;
     display: flex;
     justify-content: space-between;
 }
 
 .stockinfo__key {
-    margin-right: 20px;
-    font-size: 14px;
+    margin-right: 10px;
+    font-size: 13px;
     color: var(--sub-text-color);
 }
 
 .stockinfo__value {
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: bold;
     color: var(--bold-text-color);
 }

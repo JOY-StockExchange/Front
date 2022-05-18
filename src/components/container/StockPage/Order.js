@@ -20,7 +20,7 @@ const Order = () => {
             <div className='order__title'>
                 {tabArr.map((ele, index) => {
                     return (
-                        <li className={currentTab === index ? 'order__tab order__tab--focus' : 'order__tab'} onClick={() => selectTabHandler(index)}>
+                        <li key={index} className={currentTab === index ? 'order__tab order__tab--focus' : 'order__tab'} onClick={() => selectTabHandler(index)}>
                             {ele.name}
                         </li>
                     )

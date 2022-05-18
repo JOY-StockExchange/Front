@@ -72,7 +72,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 170px;
+    width: 150px;
     height: 50px;
     border-radius: 14px;
     border: 1px solid var(--soft-text-color);
@@ -97,7 +97,7 @@
 .section__setorder .inputnum{
     border-radius: 14px;
     border: 1px solid var(--soft-text-color);
-    width: 270px;
+    width: 250px;
     height: 45px;
     margin-top: 20px;
     padding-left: 20px;
@@ -123,7 +123,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 270px;
+    width: 250px;
     height: 50px;
     border-radius: 14px;
     border: 1px solid var(--soft-text-color);
@@ -131,7 +131,7 @@
 }
 
 .ablenum .key {
-    font-size: 15px;
+    font-size: 14px;
     color: var(--sub-text-color);
     margin: 0;
 }
