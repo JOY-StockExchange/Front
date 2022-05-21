@@ -1,7 +1,14 @@
+import { useState } from 'react';
+import MyAccountModal from './modal/MyAccountModal';
 import './MyAccountInfo.css';
 
 const MyAccountInfo = () => {
+    const [modalOpen, setModalOpen] = useState(false);
     let historyprice = 2045;
+    const modalHandler = () => {
+        if(modalOpen) setModalOpen(false);
+        else setModalOpen(true);
+    }
     return (
         <div>
             <div className='myaccountinfo__section'>
@@ -10,9 +17,10 @@ const MyAccountInfo = () => {
                 <div className='myaccountinfo__balance-withdraw'>출금가능금액</div>
             </div>
             <div className='myaccountinfo__section myaccountinfo__section__buttons'>
-                <button className='myaccountinfo__button'>채우기</button>
-                <button className='myaccountinfo__button'>보내기</button>
+                <button className='myaccountinfo__button' onClick={modalHandler}>채우기</button>
+                <button className='myaccountinfo__button' onClick={modalHandler}>보내기</button>
             </div>
+            {modalOpen ? <MyAccountModal modalHandler={modalHandler}/> : ''}
             <div className='myaccountinfo__section'>
                 그래프
             </div>

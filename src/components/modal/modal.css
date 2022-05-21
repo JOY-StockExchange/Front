@@ -9,8 +9,8 @@
 }
 
 .modal {
-    width: 300px;
-    height: 150px;
+    width: 400px;
+    height: 500px;
     background-color: #ffffff;
     position: absolute;
     left: 50%;
@@ -18,11 +18,12 @@
     transform: translate(-50%, -50%);
     z-index: 100;
     border-radius: 20px;
+    padding: 20px 20px;
 }
 
 .modal__button {
     width: 30px;
-    color: var(--bold-text-color);
+    color: var(--soft-text-color);
     font-size: 15px;
     font-weight: bold;
     background-color: #ffffff;

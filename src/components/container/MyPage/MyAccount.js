@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import MyAccountInfo from '../../MyAccountInfo';
-import Modal from '../../Modal';
 import '../container.css'
+import MyAccountEdit from '../../modal/MyAccountEdit';
 
 const MyAccount = () => {
     const [modalOpen, setModalOpen] = useState(false);
@@ -14,7 +14,7 @@ const MyAccount = () => {
             <div className='container__title myaccount__title'>
                 계좌 정보
                 <button className='myaccount__button' onClick={modalHandler}>계좌 정보 수정</button>
-                {modalOpen && <Modal modalHandler={modalHandler} />}
+                {modalOpen && <MyAccountEdit modalHandler={modalHandler} />}
             </div>
             <MyAccountInfo />
         </div>
