@@ -1,14 +1,21 @@
 import { useState } from 'react';
-import MyStockModal from './modal/MyStockModal';
+import StockBenefit from './modal/StockBenefit';
+import OrderHistory from './modal/OrderHistory';
 import './MyStockInfo.css';
 
 const MyStockInfo = () => {
-    const [modalOpen, setModalOpen] = useState(false);
+    const [stockBenefitOpen, setStockBenefitOpen] = useState(false);
+    const [orderHistoryOpen, setOrderHistoryOpen] = useState(false);
     let totalper = -2.45;
 
-    const modalHandler = () => {
-        if(modalOpen) setModalOpen(false);
-        else setModalOpen(true);
+    const stockBenefitHandler = () => {
+        if(stockBenefitOpen) setStockBenefitOpen(false);
+        else setStockBenefitOpen(true);
+    }
+
+    const orderHistoryHandler = () => {
+        if(orderHistoryOpen) setOrderHistoryOpen(false);
+        else setOrderHistoryOpen(true);
     }
     return (
         <div className='section__mystockinfo'>
@@ -21,11 +28,12 @@ const MyStockInfo = () => {
                 </div>
             </div>
             <div className='section__buttons'>
-                <button className='button__mystockinfo' onClick={modalHandler}>판매 수익</button>
-                <button className='button__mystockinfo' onClick={modalHandler}>주문 내역</button>
+                <button className='button__mystockinfo' onClick={stockBenefitHandler}>판매 수익</button>
+                <button className='button__mystockinfo' onClick={orderHistoryHandler}>주문 내역</button>
             </div>
             {/*판매수익인지, 주문내역인지에 따라 조건부 렌더링(혹은 모달 두개 따로 만들기)*/}
-            {modalOpen ? <MyStockModal modalHandler={modalHandler}/> : ''}
+            {stockBenefitOpen ? <StockBenefit stockBenefitHandler={stockBenefitHandler}/> : ''}
+            {orderHistoryOpen ? <OrderHistory orderHistoryHandler={orderHistoryHandler}/> : ''}
         </div>
     )
 }

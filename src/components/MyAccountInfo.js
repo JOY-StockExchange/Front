@@ -1,13 +1,19 @@
 import { useState } from 'react';
-import MyAccountModal from './modal/MyAccountModal';
+import AccountIn from './modal/AccountIn';
+import AccountOut from './modal/AccountOut';
 import './MyAccountInfo.css';
 
 const MyAccountInfo = () => {
-    const [modalOpen, setModalOpen] = useState(false);
+    const [accountInOpen, setaccountInOpen] = useState(false);
+    const [accountOutOpen, setaccountOutOpen] = useState(false);
     let historyprice = 2045;
-    const modalHandler = () => {
-        if(modalOpen) setModalOpen(false);
-        else setModalOpen(true);
+    const accountInHandler = () => {
+        if(accountInOpen) setaccountInOpen(false);
+        else setaccountInOpen(true);
+    }
+    const accountOutHandler = () => {
+        if(accountOutOpen) setaccountOutOpen(false);
+        else setaccountOutOpen(true);
     }
     return (
         <div>
@@ -17,10 +23,11 @@ const MyAccountInfo = () => {
                 <div className='myaccountinfo__balance-withdraw'>출금가능금액</div>
             </div>
             <div className='myaccountinfo__section myaccountinfo__section__buttons'>
-                <button className='myaccountinfo__button' onClick={modalHandler}>채우기</button>
-                <button className='myaccountinfo__button' onClick={modalHandler}>보내기</button>
+                <button className='myaccountinfo__button' onClick={accountInHandler}>채우기</button>
+                <button className='myaccountinfo__button' onClick={accountOutHandler}>보내기</button>
             </div>
-            {modalOpen ? <MyAccountModal modalHandler={modalHandler}/> : ''}
+            {accountInOpen ? <AccountIn accountInHandler={accountInHandler}/> : ''}
+            {accountOutOpen ? <AccountOut accountOutHandler={accountOutHandler}/> : ''}
             <div className='myaccountinfo__section'>
                 그래프
             </div>

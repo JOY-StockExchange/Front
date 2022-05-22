@@ -26,8 +26,14 @@ header{
     font-size: 30px;
 }
 
+.stockpage__header {
+    display: flex;
+    align-items: center;
+}
+
 .stockpage__header i{
     font-size: 20px;
+    margin-left: 10px;
 }
 
 .stockpage__wrap{

@@ -12,7 +12,7 @@
 
 .wrap{
   width: 80%;
-  min-width: 1000px;
+  min-width: 1025px;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -21,7 +21,7 @@
 nav{
   width: 20%;
   max-width: 240px;
-  min-width: 150px;
+  min-width: 180px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
