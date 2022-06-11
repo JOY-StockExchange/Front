@@ -1,4 +1,4 @@
-import OrderBookInfo from '../../OrderBookInfo';
+import OrderBookInfo from '../../stockpage/OrderBookInfo';
 import '../container.css'
 
 const OrderBook = () => {

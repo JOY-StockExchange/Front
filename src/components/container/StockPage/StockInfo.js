@@ -1,4 +1,4 @@
-import StockInfoList from '../../StockInfoList';
+import StockInfoList from '../../stockpage/StockInfoList';
 import '../container.css'
 
 const StockInfo = () => {

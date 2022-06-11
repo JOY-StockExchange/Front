@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import MyInfoList from '../../MyInfoList';
+import MyInfoList from '../../mypage/MyInfoList';
 import '../container.css'
 
 const MyInfo = () => {

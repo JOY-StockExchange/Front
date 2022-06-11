@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 import './Stock.css';
 
-const Stock = () => {
-    let per = - 2.75;
+const Stock = (props) => {
+    const src = `/stockpage/${props.id}`
     return (
         <div className='container__stock'>
-            <Link to='/stockpage/samsungbio'>
-                <img className='element__stock img__stock' alt='samsung' src='samsung.png' />
-                <span className='element__stock stock__name'>삼성전자</span>
-                <span className='element__stock stock__price'>73,339원</span>
-                <span className={per > 0 ?'element__stock stock__per stock__per--positive':'element__stock stock__per stock__per--negative'}>{per > 0 ? '+'+per : per}%</span>
+            <Link to={src} >{/*연결된 뒤에 component에서 useEffect 할것!*/}
+                <img className='element__stock img__stock' alt='samsung' src={props.img} />
+                <span className='element__stock stock__name'>{props.name}</span>
+                <span className='element__stock stock__price'>{props.price}원</span>
+                <span className={props.rate > 0 ?'element__stock stock__per stock__per--positive':'element__stock stock__per stock__per--negative'}>{props.rate > 0 ? '+'+props.rate : props.rate}%</span>
             </Link>
         </div>
     )

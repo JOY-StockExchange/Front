@@ -1,6 +1,7 @@
-import MyStockInfo from '../../MyStockInfo';
+import MyStockInfo from '../../mypage/MyStockInfo';
 import StockList from '../../StockList';
 import '../container.css'
+import { stocks } from '../../../example';
 
 const MyStock = () => {
     return(
@@ -10,7 +11,7 @@ const MyStock = () => {
                 <MyStockInfo />
             </div>
             <div className='container__ul'>
-                <StockList />
+                <StockList stocks={stocks} />
             </div>
         </div>
     )

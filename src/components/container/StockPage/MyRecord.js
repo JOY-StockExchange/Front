@@ -1,4 +1,4 @@
-import MyRecordList from '../../MyRecordList';
+import MyRecordList from '../../stockpage/MyRecordList';
 import '../container.css';
 
 const MyRecord = () => {

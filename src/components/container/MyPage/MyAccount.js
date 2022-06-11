@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import MyAccountInfo from '../../MyAccountInfo';
+import MyAccountInfo from '../../mypage/MyAccountInfo';
 import '../container.css'
 import MyAccountEdit from '../../modal/MyAccountEdit';
 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import StockBenefit from './modal/StockBenefit';
-import OrderHistory from './modal/OrderHistory';
+import StockBenefit from '../modal/StockBenefit';
+import OrderHistory from '../modal/OrderHistory';
 import './MyStockInfo.css';
 
 const MyStockInfo = () => {

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import AccountIn from './modal/AccountIn';
-import AccountOut from './modal/AccountOut';
+import AccountIn from '../modal/AccountIn';
+import AccountOut from '../modal/AccountOut';
 import './MyAccountInfo.css';
 
 const MyAccountInfo = () => {

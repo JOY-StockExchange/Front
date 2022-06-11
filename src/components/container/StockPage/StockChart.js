@@ -1,4 +1,4 @@
-import StockChartInfo from '../../StockChartInfo';
+import StockChartInfo from '../../stockpage/StockChartInfo';
 import '../container.css'
 
 const StockChart = () => {

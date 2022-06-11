@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Buy from '../../Buy';
-import Sell from '../../Sell';
+import Buy from '../../stockpage/Buy';
+import Sell from '../../stockpage/Sell';
 import '../container.css'
 
 const Order = () => {
