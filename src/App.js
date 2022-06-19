@@ -9,6 +9,7 @@ import Signup from './pages/Signup';
 import MyInfoEdit from './pages/MyInfoEdit';
 import Footer from './components/Footer';
 import NotFound from './pages/NotFound';
+import PrivateRoute from './helpers/PrivateRoute';
 
 
 
@@ -19,11 +20,15 @@ function App() {
       <div className="wrap">
         <Routes>
           <Route path = "/" element={<Home />} />
-          <Route path = "mypage" element={<MyPage />} />
+          <Route element={<PrivateRoute authentication={false}/>} >
+            <Route path="mypage" element={<MyPage />} />
+          </Route>
           <Route path = "stockpage/:stockId" element={<StockPage />} />
           <Route path = "signin" element={<Signin />} />
           <Route path = "signup" element={<Signup />} />
-          <Route path = "myinfoedit" element={<MyInfoEdit />} />
+          <Route element={<PrivateRoute authentication={false}/>} >
+            <Route path="myinfoedit" element={<MyInfoEdit />} />
+          </Route>
           <Route path = "*" element={<NotFound />} />
         </Routes>
         <Footer />

@@ -16,7 +16,7 @@ const StockList = ({stocks}) => {
             </li>
         })}
             </ul>
-            <button className='button__stockList' onClick={handleButton}>더보기</button>
+            {show.length === stocks.length ? '':<button className='button__stockList' onClick={handleButton}>더보기</button>}
         </div>
     )
 }
