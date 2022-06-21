@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Navigate, Outlet} from 'react-router-dom'
+import { AuthContext } from '../contexts/Store';
 
-function PrivateRoute({children}) {
-    const auth = false;//인증 처리 해줘야 함.
+function PrivateRoute() {
+    const {auth} = useContext(AuthContext);
     return auth ? <Outlet /> : <Navigate to='signin' />
 }
 export default PrivateRoute;

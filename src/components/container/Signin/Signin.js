@@ -1,11 +1,12 @@
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../contexts/Store';
 import '../container.css'
 
 const Signin = () => {
     const [inputs, setInputs] = useState({email:'', password:''});
     const [isChecked, setIsChecked] = useState(false);
-    const navigate = useNavigate();
+    const { login } = useContext(AuthContext);
 
     const handleInputs = (e) => {
         const { name, value } = e.target;
@@ -23,7 +24,11 @@ const Signin = () => {
     const handleSubmit = () => {
         //조건 체크
         //서버로 로그인 요청 -> 응답이 오면 상태변경하고 홈으로 리다이렉트 
-        navigate('/');
+        if(!inputs.email || !inputs.password){
+            alert('이메일, 비밀번호 모두 입력해주세요')
+            return;
+        }
+        login(inputs.email, inputs.password);
     }
     return(
         <div className='container container__signin'>

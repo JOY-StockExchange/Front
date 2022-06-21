@@ -59,6 +59,10 @@ ul{
   align-items: center;
 }
 
+.logout {
+  color: var(--sub-text-color)
+}
+
 .active{
   font-weight: bold;
   color: var(--activate-color);
